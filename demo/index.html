@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+		<title>OZWSS-Polymer-room-list Demo</title>
+		<script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+		<link rel="import" href="../OZWSS-Polymer-room-list.html">
+	</head>
+	<body>
+		<OZWSS-Polymer-room-list id="room-list"></OZWSS-Polymer-room-list>
+		<script>
+			var room_list = document.getElementById('room-list');
+			room_list.Rooms = JSON.parse('{"command":"ROOMLIST","rooms":[{"Name":"Living","currentSetpoint":14,"currentTemp":24.100000381469727}]}').rooms.slice();
+		</script>
+	</body>
+</html>
