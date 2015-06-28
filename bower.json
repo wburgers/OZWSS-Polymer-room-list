@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#~1.0.0",
-	"OZWSS-Polymer-room-list-item": "git://github.com/wburgers/OZWSS-Polymer-room-list#master"
+	"OZWSS-Polymer-room-list-item": "git://github.com/wburgers/OZWSS-Polymer-room-list-item#master"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
