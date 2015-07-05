@@ -17,7 +17,7 @@
 	</style>
 	<template>
 		<template is="dom-repeat" items="{{Rooms}}">
-			<OZWSS-Polymer-room-list-item room={{item}} on-click="{{roomClick}}">
+			<OZWSS-Polymer-room-list-item room={{item}}>
 			</OZWSS-Polymer-room-list-item>
 		</template>
 	</template>
@@ -31,10 +31,6 @@
 				type: Array,
 				value: function() { return []; },
 			},
-		},
-		_roomClick: function(event, detail, sender) {
-			var roomName = event.target.templateInstance.model.room.Name;
-			this.fire('change-view',{view:10,roomName:roomName});
 		},
 	});
 </script>
