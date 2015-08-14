@@ -9,13 +9,13 @@
 -->
 
 <dom-module id="OZWSS-Polymer-room-list">
-	<style>
-		:host {
-			@apply(--layout-horizontal);
-			@apply(--layout-wrap);
-		}
-	</style>
 	<template>
+		<style>
+			:host {
+				@apply(--layout-horizontal);
+				@apply(--layout-wrap);
+			}
+		</style>
 		<template is="dom-repeat" items="{{Rooms}}">
 			<OZWSS-Polymer-room-list-item room={{item}}>
 			</OZWSS-Polymer-room-list-item>
